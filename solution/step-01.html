@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+
+<head>
+  <!-- Set the page title -->
+  <title>Tutorial Exercise 08</title>
+
+  <!-- Set the charset we're using to UTF-8 -->
+  <meta charset="utf-8" />
+
+  <!-- Set the screens default zoom / scale to 1 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Specifies the document mode for Internet Explorer -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <!-- Set the CSS Reset File -->
+  <link rel="stylesheet" href="./reset.css" />
+
+  <!-- Set the main CSS file -->
+  <link rel="stylesheet" href="./style-01.css" />
+
+</head>
+
+<body>
+
+  <!--
+
+    YOU DO NOT HAVE TO MODIFY THE HTML TO BUILD YOUR AWESOME PAGE
+
+  -->
+
+  <!-- Site Header -->
+  <header>
+    <h2>Media Queries</h2>
+  </header>
+
+  <main>
+    <!-- Hidden heading for screen readers -->
+    <h1 class="sr-only">Tutorial Exercise 08</h1>
+
+
+    <div class="responsive-box">
+      <p>Resize the browser window to see the effect.</p>
+    </div>
+
+  </main>
+
+  <footer>
+    <h2 class="sr-only">Site footer</h2>
+    <p>Width: <span id="width">0</span>px</p>
+  </footer>
+
+  <!--
+    This JavaScript just grabs the width of the viewport and displays it in the footer.
+  -->
+  <script>
+    const widthOutput = document.querySelector("#width");
+
+    function updateSize() {
+      widthOutput.textContent = window.innerWidth;
+    }
+
+    window.addEventListener("load", updateSize);
+    window.addEventListener("resize", updateSize);
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+
+<head>
+  <!-- Set the page title -->
+  <title>Tutorial Exercise 08</title>
+
+  <!-- Set the charset we're using to UTF-8 -->
+  <meta charset="utf-8" />
+
+  <!-- Set the screens default zoom / scale to 1 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Specifies the document mode for Internet Explorer -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <!-- Set the CSS Reset File -->
+  <link rel="stylesheet" href="./reset.css" />
+
+  <!-- Set the main CSS file -->
+  <link rel="stylesheet" href="./style-03.css" />
+
+</head>
+<body>
+
+  <!--
+
+  YOU DO NOT HAVE TO MODIFY THE HTML TO BUILD YOUR AWESOME PAGE
+
+  -->
+  <header>
+    <h2>Practicing Responsive CSS</h2>
+  </header>
+
+  <main>
+    <div class="bg-dark-red">
+      <div class="container">
+        <div class="intro-content">
+          <h1>Lorem ipsum dolor sit.</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Exercitationem aspernatur distinctio laudantium dolores. Nulla
+            quibusdam reprehenderit eum sit minus aliquid!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <div class="container">
+        <h2>Lorem ipsum dolor sit</h2>
+        <div class="flex-split">
+          <p>
+            Corporis officiis adipisci alias molestias quia dignissimos
+            mollitia vero. Saepe vitae sed suscipit quam iste unde tempore!
+            Saepe consequatur accusantium nihil soluta iste, necessitatibus
+            eveniet nam tempore accusamus ipsam cumque porro ullam
+            exercitationem recusandae numquam nemo laborum voluptates commodi
+            perspiciatis! Modi vitae dolore optio sit voluptatem dicta
+            delectus, assumenda magni illo asperiores.
+          </p>
+          <p>
+            Nam vel tenetur asperiores veniam voluptates excepturi, commodi
+            facilis omnis, corrupti aspernatur accusantium eius quaerat minus.
+            Laborum, vero. Nostrum dolores at animi eum facilis. Harum
+            molestias adipisci ratione, similique, ipsam quibusdam architecto
+            aliquam repellat maiores debitis laborum eaque.
+          </p>
+          <p>
+            Rem eius voluptatem, sapiente ad dolorem deleniti hic! Rerum
+            similique vitae necessitatibus accusantium dolore pariatur veniam
+            dolorem quo impedit harum laboriosam et accusamus, veritatis
+            repellat reiciendis aut doloribus velit ratione natus, dolores
+            eveniet quos voluptatum. Quas nam impedit aperiam odit ullam
+            recusandae porro excepturi id quia beatae! Illo explicabo
+            aspernatur odit earum rerum voluptatem totam commodi adipisci
+            consequuntur ea.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="bg-blue-drk">
+        <div class="container">
+          <div class="flex-split">
+            <div>
+              <img src="./images/train-01.jpg" alt="" />
+            </div>
+            <div>
+              <h2>Getting to know responsive</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+                commodi alias ratione laboriosam in ipsa maxime aliquam nemo
+                error non eaque officia quos esse earum accusamus ad, nisi
+                velit! Quae ex accusamus ipsam ullam, vel doloribus alias sunt
+                tenetur totam!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="flex-split">
+          <div>
+            <h2>Getting to know responsive</h2>
+            <p>
+              Adipisci fugit quam quibusdam eius. Cum, sit nesciunt! Dolore
+              nisi aspernatur sequi animi reiciendis totam nam repellat nobis
+              repellendus ipsam repudiandae inventore alias laborum cumque,
+              perferendis unde quidem iure, odit tenetur iste eum doloremque
+              vel vero. Repellendus quis vero iusto voluptatibus nulla vel
+              voluptatum obcaecati ipsa saepe nam ad, corrupti quod, soluta
+              sint, unde explicabo neque maiores?
+            </p>
+          </div>
+          <div>
+            <img src="./images/train-02.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <h2 class="sr-only">Site footer</h2>
+    <p>Width: <span id="width">0</span>px</p>
+  </footer>
+
+  <!--
+
+    CREDIT:
+    Photo by Chait Goli: https://www.pexels.com/photo/photo-of-two-red-trains-2031758/
+
+  -->
+
+  <script>
+    const widthOutput = document.querySelector("#width");
+
+    function updateSize() {
+      widthOutput.textContent = window.innerWidth;
+    }
+
+    window.addEventListener("load", updateSize);
+    window.addEventListener("resize", updateSize);
+  </script>
+
+</body>
+</html>

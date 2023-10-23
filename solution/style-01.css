@@ -1,0 +1,155 @@
+/*
+ * CSS File for the solution
+ * Tutorial 08
+ * Step 01
+ */
+
+
+/*
+
+  We're going to make a box a different background colour
+  based on the viewport width.
+
+  We will use media queries to do this.
+
+  We start at the smallest viewport width and work our way up.
+
+  sm - small - viewport width < 576px
+  md - medium - viewport width >= 576px
+  lg - large - viewport width >= 768px
+  xl - extra large - viewport width >= 992px
+  xxl - extra extra large - viewport width >= 1200px
+
+*/
+
+/*
+  Here we set the default styles for a responsive box
+  Nothing to change in here but keep a note of the
+  "transition" property
+ */
+.responsive-box {
+  padding: 2rem;
+  text-align: center;
+
+  width: 200px;
+  border-radius: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  font-weight: 800;
+  font-size: 1.5rem;
+
+  color: #edf2f4;
+  background-color: #8d99ae;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+  /* This transition property will make the colour change
+     smooth and gradual */
+  transition: all 0.75s ease-in;
+}
+
+/*
+  Set the background colour for md viewports
+  Anything larger than 576px will have these styles applied
+  (until the viewport gets to the next specified breakpoint)
+*/
+@media (min-width: 576px) {
+  .responsive-box {
+    background-color: #dc2f02;
+  }
+}
+
+/*
+  Set the background colour for lg viewports
+  Anything larger than 768px will have these styles applied
+  (until the viewport gets to the next specified breakpoint)
+*/
+@media (min-width: 768px) {
+  .responsive-box {
+    background-color: #d00000;
+  }
+}
+
+
+/*
+  Set the background colour for xl viewports
+  Anything larger than 992px will have these styles applied
+  (until the viewport gets to the next specified breakpoint)
+*/
+@media (min-width: 992px) {
+  .responsive-box {
+    background-color: #9d0208;
+  }
+}
+
+
+/*
+  Set the background colour for xxl viewports
+  Anything larger than 1200px will have these styles applied
+  (until the viewport gets to the next specified breakpoint)
+*/
+@media (min-width: 1200px) {
+  .responsive-box {
+    background-color: #6a040f;
+  }
+}
+
+
+/*
+  CORE PAGE CSS - DO NOT MODIFY
+
+  https://coolors.co/palette/6b9080-a4c3b2-cce3de-eaf4f4-f6fff8
+
+*/
+
+body {
+  color: #3c544a;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #edf2f4;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+
+}
+
+header h2 {
+  padding: 2rem;
+  margin-bottom: 50px;
+  background-color: black;
+  color: #edf2f4;
+  text-align: center;
+  font-size: 2rem;
+
+  background-color: #d90429;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  background-color: #2b2d42;
+  padding: 2rem;
+  text-align: center;
+  font-weight: 800;
+  color: #edf2f4;
+}
+
+
+/****** Screen reader text utility clsas *******/
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

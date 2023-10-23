@@ -1,0 +1,181 @@
+/*
+ * CSS File for the solution
+ * Tutorial 08
+ * Step 03
+ */
+
+/*
+INSTRUCTIONS
+
+ADD AND OR MODIFY YOUR CSS HERE
+YOU DO NOT NEED TO MODIFY THE HTML FOR THIS EXERCISE
+
+*/
+
+/*
+
+ RESPONSIVE FLEX
+
+*/
+
+/*
+  In mobile mode we don't need flex, we only need flex when the screen size gets too large
+
+  Later in this file we will add a media query and we'll make this class use display: flex for larger screens so that the image and text are side by side
+*/
+.flex-split {
+ display: block;
+}
+
+.flex-split > * {
+ /* This makes our flex box items try to be their largest size */
+ width: 100%;
+}
+
+.flex-split img {
+ /* 1: Add width set to 100% so that the images take up their full space */
+
+ /* 2. Also, set the aspect ratio to 2 /1 using the property - aspect-ratio: 2 / 1; */
+
+ /* Object fit cover helps make sure our image displays properly */
+ object-fit: cover;
+}
+
+/*
+
+  3. Add a media query that targets the screen and
+  activates beyond a minimum width of 750px
+
+  hint: min-width: 750px
+
+  Inside that media query, redeclare flex-split
+  so that it makes your design responsive
+
+  Also add this helper into the media query:
+
+  .flex-split > * + * {
+    margin-left: 2rem;
+  }
+
+*/
+
+
+/* Add step 3 here */
+
+
+
+/*
+
+  That's it that's all. Now just check your work in the browser.
+  The trains and text should be side by side in desktop mode and
+  stacked on top of each other in mobile mode.
+
+*/
+
+
+/*
+
+ UTILITIES
+
+*/
+
+.bg-blue-drk {
+ background-color: #003049;
+ color: #fdf0d5;
+}
+
+.bg-dark-red {
+ background-color: #c1121f;
+}
+
+.container {
+ margin: 0 auto;
+ max-width: 1024px;
+ padding: 5rem 1rem;
+}
+
+
+/*
+
+  CONTENT
+
+*/
+
+.intro-content {
+  padding: 1rem 0rem;
+  width: 90%;
+  color: #fdf0d5;
+}
+
+
+@media (min-width: 750px) {
+  .intro-content {
+    padding: 1rem 0rem;
+    width: 50%;
+    color: #fdf0d5;
+  }
+
+}
+
+/*
+
+ DO NOT MODIFY
+
+ CORE PAGE CSS
+
+   https://coolors.co/palette/780000-c1121f-fdf0d5-003049-669bbc
+
+*/
+
+body {
+ color: #003049;
+ font-family: sans-serif;
+ background-color: #fdf0d5;
+}
+
+header h2 {
+ padding: 2rem;
+ color: #fdf0d5;
+ text-align: center;
+ font-size: 3rem;
+
+ background-color: #003049;
+}
+
+main h2 {
+ font-size: 2rem;
+ margin-bottom: 1rem;
+}
+
+main section {
+ margin-top: 2rem;
+}
+
+p {
+ margin-bottom: 1rem;
+}
+
+footer {
+ background-color: #780000;
+ padding: 2rem;
+ text-align: center;
+ font-weight: 800;
+ color: #fdf0d5;
+}
+
+/*
+
+ SCREEN READER UTILITY
+
+*/
+.sr-only {
+ position: absolute;
+ width: 1px;
+ height: 1px;
+ padding: 0;
+ margin: -1px;
+ overflow: hidden;
+ clip: rect(0, 0, 0, 0);
+ white-space: nowrap;
+ border-width: 0;
+}
